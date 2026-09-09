@@ -1,0 +1,9 @@
+{
+  "name": "gerador-sites-ia",
+  "version": "1.0.0",
+  "description": "Gerador de sites para lojas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
