@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Sites</title>
+</head>
+<body>
+  <h1>🤖 Gerador de Sites com IA</h1>
+  <p>Coloque o link da loja no Google Maps:</p>
+
+  <input id="link" type="url" placeholder="Cole o link do Google Maps">
+  <button onclick="gerarSite()">Gerar site</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function gerarSite() {
+      const link = document.getElementById("link").value;
+      const resultado = document.getElementById("resultado");
+
+      if (!link) {
+        resultado.innerHTML = "<p>⚠️ Cole o link da loja primeiro.</p>";
+        return;
+      }
+
+      resultado.innerHTML = `
+        <h2>Site da sua loja</h2>
+        <p>Link recebido com sucesso! ✅</p>
+        <a href="${link}" target="_blank">Ver loja no Google Maps</a>
+      `;
+    }
+  </script>
+</body>
+</html>
